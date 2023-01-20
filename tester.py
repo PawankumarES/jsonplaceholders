@@ -1,6 +1,5 @@
 from shillelagh.adapters.registry import registry
 from shillelagh.backends.apsw.db import connect
-from shillelagh.adapters.file.adapter import JsonPlaceHolderAPI
 from adapter import JsonPlaceHolderAPI
 
 #registry.register('jsonplaceholderapi', "/Users/pawankumar/sup-analysis/jsonplaceholders/adapter.py","JsonPlaceHolderAPI")
