@@ -60,7 +60,6 @@ class JsonPlaceHolderAPI(Adapter):
     #     parsed = urllib.parse.urlparse(uri)
     #     query_string = urllib.parse.parse_qs(parsed.query)
 
-    #     # store the location, eg, "London"
     #     self.postId = query_string["postId"][0]
     #     self._session = requests_cache.CachedSession(
     #         cache_name="jsonplaceholders_cache",
