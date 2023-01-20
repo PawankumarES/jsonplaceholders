@@ -7,7 +7,7 @@ from shillelagh.lib import analyze
 class JsonPlaceHolderAPI(Adapter):
 
     """
-    An adapter to historical data from https://jsonplaceholder.typicode.com/.
+    An adapter to data from https://jsonplaceholder.typicode.com/.
     """
 
     safe = True
@@ -28,8 +28,7 @@ class JsonPlaceHolderAPI(Adapter):
         super().__init__()
 
         self.postId = postId
-        # use a cache, since the adapter does a lot of similar API requests,
-        # and the data should rarely (never?) change
+        # using cache, since the adapter does a lot of similar API requests and the data rarely changes
         self._session = requests_cache.CachedSession(
             cache_name="jsonplaceholders_cache",
             backend="sqlite",
