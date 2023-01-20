@@ -95,7 +95,6 @@ class JsonPlaceHolderAPI(Adapter):
                 exact=False,
             )
             for column_name in column_names
-            if column_name != "rowid"
         }
 
     def get_columns(self):
